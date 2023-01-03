@@ -1,0 +1,4 @@
+- source: index.qmd
+  quarto-pub:
+    - id: a3a22042-07c4-4fab-8ed5-cb2a223bd639
+      url: 'https://quartopub.com/sites/deepshamenghani/portfolio-with-quarto-workshop'
