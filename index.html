@@ -387,7 +387,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-color="#2c3e50" class="quarto-title-block center">
+<section id="title-slide" data-background-color="#004E4F" class="quarto-title-block center">
   <h1 class="title">Data Science Portfolio with Quarto</h1>
 
 <div class="quarto-title-authors">
@@ -401,22 +401,26 @@ Deepsha Menghani
   <p class="date">1/24/23</p>
 </section>
 <section>
-<section id="what-is-a-data-science-portfolio" class="title-slide slide level1 center" data-background-color="#2c3e50">
+<section id="what-is-a-data-science-portfolio" class="title-slide slide level1 center" data-background-color="#004E4F">
 <h1>What is a Data Science Portfolio</h1>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
-<h4 id="a-data-science-portfolio-is-a-collection-of-your-best-work-and-demonstrates-your-skills-as-a-data-scientist-1">A data science portfolio is a collection of your best work and demonstrates your skills as a data scientist <sup>1</sup></h4>
+<section id="a-data-science-portfolio-is-a-collection-of-your-best-work-and-demonstrates-your-skills-as-a-data-scientist" class="slide level2">
+<h2>A data science portfolio is a collection of your best work and demonstrates your skills as a data scientist</h2>
 <p><br></p>
-<p><img data-src="Images/How_to_build_portfolio.png" width="1000"></p>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>Source: <a href="https://www.springboard.com/blog/data-science/data-science-portfolio/" target="_blank" width="120%">How To Build an Awesome Data Science Portfolio</a></p></li></ol></aside></section>
-<section id="but-at-the-thought-of-creating-a-data-science-portfolio" class="slide level2">
-<h2>But at the thought of creating a Data Science portfolio</h2>
+
+<img data-src="Images/components_of_portfolio.png" class="r-stretch"></section>
+<section id="a-data-science-portfolio-is-a-collection-of-your-best-work-and-demonstrates-your-skills-as-a-data-scientist-1" class="slide level2">
+<h2>A data science portfolio is a collection of your best work and demonstrates your skills as a data scientist</h2>
+<p><br></p>
+
+<img data-src="Images/strengths_of_portfolio.png" class="r-stretch"></section>
+<section id="but-at-the-thought-of-creating-a-data-science-portfolio-website" class="slide level2">
+<h2>But at the thought of creating a Data Science portfolio website…</h2>
 
 <img data-src="Images/WA_whathappenstoyou.gif" class="r-stretch quarto-figure-center"></section></section>
 <section>
-<section id="section-1" class="title-slide slide level1 center" data-background-color="#2c3e50">
+<section id="section" class="title-slide slide level1 center">
 <h1></h1>
 <p><a href="https://deepshamenghani.quarto.pub/dmenghani/" target="_blank">Let’s take a look at an example</a></p>
 
@@ -424,26 +428,40 @@ Deepsha Menghani
 <section id="why-i-chose-quarto-to-build-my-portfolio" class="slide level2">
 <h2>Why I chose Quarto to build my portfolio</h2>
 <p><br></p>
-<div>
 <ul>
-<li class="fragment">Base blog skeleton is simple and clean</li>
-<li class="fragment">It already has the parts I need</li>
-<li class="fragment">It is very quick and easy to create</li>
-<li class="fragment">I can go from “good enough” simple to complex galore</li>
+<li>Base blog skeleton is simple and clean</li>
+<li>It already has the base components for a portfolio website</li>
+<li>It is very quick and easy to create</li>
+<li>It is language and tool agnostic</li>
 </ul>
+<div class="footer">
+<p>Learn about Quarto at <a href="https://quarto.org/">https://quarto.org/</a></p>
+</div>
+</section>
+<section id="what-we-will-cover" class="slide level2">
+<h2>What we will cover</h2>
+<p><br></p>
+<ul>
+<li>Configuring the structure of your website</li>
+<li>Adding content</li>
+<li>Customizing to your unique self</li>
+<li>Publishing and updating your website</li>
+</ul>
+<div class="footer">
+<p>Learn about Quarto at <a href="https://quarto.org/">https://quarto.org/</a></p>
 </div>
 </section></section>
 <section>
-<section id="lets-build-a-portfolio" class="title-slide slide level1 center" data-background-color="#2c3e50">
+<section id="lets-build-a-portfolio" class="title-slide slide level1 center" data-background-color="#004E4F">
 <h1>Let’s build a portfolio</h1>
 
 </section>
 <section id="create-a-new-quarto-blog-project" class="slide level2">
 <h2>Create a new Quarto blog project</h2>
-<h3 id="section-2"></h3>
+<h3 id="section-1"></h3>
 <script src="https://fast.wistia.com/embed/medias/i2xdl5qbvy.jsonp" async=""></script>
 <script src="https://fast.wistia.com/assets/external/E-v1.js" async=""></script>
-<div class="wistia_embed wistia_async_i2xdl5qbvy" style="height:530px;position:relative;width:1050px">
+<div class="wistia_embed wistia_async_i2xdl5qbvy" style="height:800px;position:relative;width:1500px">
 <div class="wistia_swatch" style="height:110%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
 <p><img src="https://fast.wistia.com/embed/medias/i2xdl5qbvy/swatch" style="filter:blur(5px);height:150%;object-fit:contain;width:200%;" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></p>
 </div>
@@ -452,17 +470,41 @@ Deepsha Menghani
 <section id="initial-file-structure" class="slide level2">
 <h2>Initial file structure</h2>
 <div class="columns">
-<div class="column fragment" style="width:45%;">
+<div class="column" style="width:45%;">
 <p><img data-src="images/Blog_index_snapshot.png"></p>
-</div><div class="column fragment" style="width:45%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/Blog_files_snapshot.png"></p>
 </div>
 </div>
 </section>
+<section id="initial-file-structure-1" class="slide level2">
+<h2>Initial file structure</h2>
+
+<img data-src="images/base_page_p0.png" class="r-stretch quarto-figure-center"></section>
+<section id="index.qmd" class="slide level2">
+<h2>index.qmd</h2>
+
+<img data-src="images/base_page_p1.png" class="r-stretch quarto-figure-center"></section>
+<section id="quarto.yml" class="slide level2">
+<h2>_quarto.yml</h2>
+
+<img data-src="images/base_page_p2.png" class="r-stretch quarto-figure-center"></section>
+<section id="about.qmd" class="slide level2">
+<h2>about.qmd</h2>
+
+<img data-src="images/base_page_p3.png" class="r-stretch quarto-figure-center"></section>
+<section id="css-files" class="slide level2">
+<h2>css files</h2>
+
+<img data-src="images/base_page_p4.png" class="r-stretch quarto-figure-center"></section>
+<section id="posts-folder" class="slide level2">
+<h2>posts folder</h2>
+
+<img data-src="images/base_page_p5.png" class="r-stretch quarto-figure-center"></section>
 <section id="quarto.yml-file-provides-the-primary-structure-to-the-website" class="slide level2">
 <h2>_quarto.yml file provides the primary structure to the website</h2>
 <div class="columns">
-<div class="column fragment" style="width:45%;">
+<div class="column" style="width:45%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>project<span class="sc">:</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a>  type<span class="sc">:</span> website</span>
@@ -483,15 +525,18 @@ Deepsha Menghani
 <span id="cb1-17"><a href="#cb1-17"></a></span>
 <span id="cb1-18"><a href="#cb1-18"></a>editor<span class="sc">:</span> visual</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div><div class="column fragment" style="width:55%;">
+</div><div class="column" style="width:55%;">
 <p><img data-src="images/initial_blog.png"></p>
 </div>
+</div>
+<div class="footer">
+<p>More about website navidation options: <a href="https://quarto.org/docs/websites/website-navigation.html">https://quarto.org/docs/websites/website-navigation.html</a></p>
 </div>
 </section>
 <section id="index.qmd-file-defines-the-home-page-of-the-website-structure" class="slide level2">
 <h2>index.qmd file defines the home page of the website structure</h2>
 <div class="columns">
-<div class="column fragment" style="width:45%;">
+<div class="column" style="width:45%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="sc">---</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a>title<span class="sc">:</span> <span class="st">"Portfolio"</span></span>
@@ -506,7 +551,7 @@ Deepsha Menghani
 <span id="cb2-11"><a href="#cb2-11"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
 <span id="cb2-12"><a href="#cb2-12"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div><div class="column fragment" style="width:55%;">
+</div><div class="column" style="width:55%;">
 <p><img data-src="images/initial_blog.png"></p>
 </div>
 </div>
@@ -514,7 +559,7 @@ Deepsha Menghani
 <section id="about.qmd-file-defines-the-about-page-structure" class="slide level2">
 <h2>about.qmd file defines the “About” page structure</h2>
 <div class="columns">
-<div class="column fragment" style="width:45%;">
+<div class="column" style="width:45%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="sc">---</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a>title<span class="sc">:</span> <span class="st">"About"</span></span>
@@ -535,7 +580,7 @@ Deepsha Menghani
 <span id="cb3-17"><a href="#cb3-17"></a></span>
 <span id="cb3-18"><a href="#cb3-18"></a>About this blog</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div><div class="column fragment" style="width:55%;">
+</div><div class="column" style="width:55%;">
 <p><img data-src="images/initial_about.png"></p>
 </div>
 </div>
@@ -543,7 +588,7 @@ Deepsha Menghani
 <section id="update-title-and-introduce-tabs-by-editing-_quarto.yml" class="slide level2">
 <h2>Update title and introduce tabs by editing _quarto.yml</h2>
 <div class="columns">
-<div class="column fragment" style="width:45%;">
+<div class="column" style="width:45%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4" data-code-line-numbers="2|5-11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>website<span class="sc">:</span></span>
 <span id="cb4-2"><a href="#cb4-2"></a>  title<span class="sc">:</span> <span class="st">"Deepsha Menghani"</span></span>
@@ -565,7 +610,7 @@ Deepsha Menghani
 <span id="cb4-18"><a href="#cb4-18"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
-</div><div class="column fragment" style="width:55%;">
+</div><div class="column" style="width:55%;">
 <p><img data-src="images/tabs.png"></p>
 </div>
 </div>
@@ -573,14 +618,14 @@ Deepsha Menghani
 
 </div></section></section>
 <section>
-<section id="adding-and-referencing-content-in-the-blog" class="title-slide slide level1 center" data-background-color="#2c3e50">
+<section id="adding-and-referencing-content-in-the-blog" class="title-slide slide level1 center" data-background-color="#004E4F">
 <h1>Adding and referencing content in the blog</h1>
 
 </section>
 <section id="update-home-tab-by-editing-index.qmd" class="slide level2">
 <h2>Update home tab by editing “index.qmd”</h2>
 <div class="columns">
-<div class="column fragment" style="width:45%;">
+<div class="column" style="width:45%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="sc">---</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a>title<span class="sc">:</span> <span class="st">"Deepsha Menghani"</span></span>
@@ -594,7 +639,7 @@ Deepsha Menghani
 <span id="cb5-10"><a href="#cb5-10"></a></span>
 <span id="cb5-11"><a href="#cb5-11"></a>About this blog</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div><div class="column fragment" style="width:55%;">
+</div><div class="column" style="width:55%;">
 <p><img data-src="images/jolla.png"></p>
 </div>
 </div>
@@ -605,7 +650,7 @@ Deepsha Menghani
 <section id="add-self-description-to-the-index.qmd" class="slide level2">
 <h2>Add self description to the “index.qmd”</h2>
 <div class="columns">
-<div class="column fragment" style="width:45%;">
+<div class="column" style="width:45%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6" data-code-line-numbers="11-17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="sc">---</span></span>
 <span id="cb6-2"><a href="#cb6-2"></a>title<span class="sc">:</span> <span class="st">"Deepsha Menghani"</span></span>
@@ -622,7 +667,7 @@ Deepsha Menghani
 <span id="cb6-13"><a href="#cb6-13"></a>I recently expanded my skill set to include topics like Quarto, tidymodels, working <span class="cf">in</span> cross<span class="sc">-</span>language R<span class="sc">/</span>Python environment using reticulate, and data visualizations using animation and interactivity. I love learning new things constantly and sharing my knowledge with others <span class="cf">in</span> a digestible manner.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
-</div><div class="column fragment" style="width:55%;">
+</div><div class="column" style="width:55%;">
 <p><img data-src="images/description.png"></p>
 </div>
 </div>
@@ -632,7 +677,7 @@ Deepsha Menghani
 </div></section><section id="add-media-links-to-index.qmd" class="slide level2">
 <h2>Add media links to “index.qmd”</h2>
 <div class="columns">
-<div class="column fragment" style="width:55%;">
+<div class="column" style="width:55%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7" data-code-line-numbers="8-23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="sc">---</span></span>
 <span id="cb7-2"><a href="#cb7-2"></a>title<span class="sc">:</span> <span class="st">"Deepsha Menghani"</span></span>
@@ -660,22 +705,25 @@ Deepsha Menghani
 <span id="cb7-24"><a href="#cb7-24"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
-</div><div class="column fragment" style="width:45%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/medialinks.png"></p>
 </div>
+</div>
+<div class="footer">
+<p>More icons at: <a href="https://icons.getbootstrap.com/">https://icons.getbootstrap.com/</a></p>
 </div>
 </section><section id="add-media-links-to-index.qmd-output" class="slide level2 output-location-slide"><h2>Add media links to “index.qmd”</h2><div class="cell output-location-slide">
 
 </div></section></section>
 <section>
-<section id="resume-tab-update" class="title-slide slide level1 center" data-background-color="#2c3e50">
+<section id="resume-tab-update" class="title-slide slide level1 center" data-background-color="#004E4F">
 <h1>Resume tab update</h1>
 
 </section>
 <section id="embedding-exisiting-resume-pdf-in-resume.qmd" class="slide level2">
-<h2>Embedding exisiting resume pdf in <span class="fragment">resume.qmd</span></h2>
+<h2>Embedding exisiting resume pdf in resume.qmd</h2>
 <div class="columns">
-<div class="column fragment" style="width:55%;">
+<div class="column" style="width:55%;">
 <div class="sourceCode" id="cb8" data-eval="FALSE," data-echo="TRUE"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="sc">&lt;</span>html<span class="sc">&gt;</span></span>
 <span id="cb8-2"><a href="#cb8-2"></a>  </span>
 <span id="cb8-3"><a href="#cb8-3"></a><span class="er">&lt;</span>body<span class="sc">&gt;</span></span>
@@ -695,17 +743,17 @@ Deepsha Menghani
 <span id="cb9-3"><a href="#cb9-3"></a>  height<span class="ot">=</span><span class="st">"800"</span> </span>
 <span id="cb9-4"><a href="#cb9-4"></a>  src<span class="ot">=</span><span class="st">"images/Menghani_Deepsha_Resume.pdf"</span><span class="sc">&gt;</span></span>
 <span id="cb9-5"><a href="#cb9-5"></a><span class="er">&lt;/</span>iframe<span class="sc">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column fragment" style="width:45%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/resume_embed.png"></p>
 </div>
 </div>
 </section></section>
 <section>
-<section id="section-3" class="title-slide slide level1 center" data-background-color="#2c3e50">
+<section id="section-2" class="title-slide slide level1 center" data-background-color="#004E4F">
 <h1></h1>
 <p>Or create a personalized resume with Quarto markdown</p>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -719,18 +767,18 @@ Deepsha Menghani
 </div>
 </section></section>
 <section>
-<section id="project-listings" class="title-slide slide level1 center" data-background-color="#2c3e50">
+<section id="project-listings" class="title-slide slide level1 center" data-background-color="#004E4F">
 <h1>Project listings</h1>
 <p>We will now work with projects.qmd</p>
 </section>
 <section id="add-listings-of-content-within-the-website" class="slide level2">
 <h2>Add listings of content within the website</h2>
 <ul>
-<li>Projects tab points to the projects.qmd file as called out in _quarto.yml earlier</li>
-<li>The default “posts” folder has content examples that prjects.qmd can point to</li>
+<li>We pointed the “Projects” tab to the projects.qmd file in _quarto.yml earlier</li>
+<li>Let’s ask projects.qmd file to pick its listings from the posts folder</li>
 </ul>
 <div class="columns">
-<div class="column fragment" style="width:55%;">
+<div class="column" style="width:55%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="sc">---</span></span>
 <span id="cb10-2"><a href="#cb10-2"></a>title<span class="sc">:</span> <span class="st">"Projects"</span></span>
@@ -745,7 +793,7 @@ Deepsha Menghani
 <span id="cb10-11"><a href="#cb10-11"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
 <span id="cb10-12"><a href="#cb10-12"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div><div class="column fragment" style="width:45%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/initial_posts.png"></p>
 </div>
 </div>
@@ -772,22 +820,11 @@ Deepsha Menghani
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="sc">---</span></span>
 <span id="cb11-2"><a href="#cb11-2"></a>title<span class="sc">:</span> <span class="st">"TidyTuesday: Retail Sales data analysis with Plotly in R"</span></span>
-<span id="cb11-3"><a href="#cb11-3"></a>date<span class="sc">:</span> today </span>
-<span id="cb11-4"><a href="#cb11-4"></a>author<span class="sc">:</span></span>
-<span id="cb11-5"><a href="#cb11-5"></a>  <span class="sc">-</span> name<span class="sc">:</span> Deepsha Menghani </span>
-<span id="cb11-6"><a href="#cb11-6"></a>    url<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>deepshamenghani</span>
-<span id="cb11-7"><a href="#cb11-7"></a>format<span class="sc">:</span></span>
-<span id="cb11-8"><a href="#cb11-8"></a>  html<span class="sc">:</span></span>
-<span id="cb11-9"><a href="#cb11-9"></a>    theme<span class="sc">:</span> flatly</span>
-<span id="cb11-10"><a href="#cb11-10"></a>    code<span class="sc">-</span>fold<span class="sc">:</span> false</span>
-<span id="cb11-11"><a href="#cb11-11"></a>    code<span class="sc">-</span>tools<span class="sc">:</span> true</span>
-<span id="cb11-12"><a href="#cb11-12"></a>    code<span class="sc">-</span>link<span class="sc">:</span> true</span>
-<span id="cb11-13"><a href="#cb11-13"></a>    toc<span class="sc">:</span> false</span>
-<span id="cb11-14"><a href="#cb11-14"></a>    number<span class="sc">-</span>sections<span class="sc">:</span> true</span>
-<span id="cb11-15"><a href="#cb11-15"></a>link<span class="sc">-</span>citations<span class="sc">:</span> yes</span>
-<span id="cb11-16"><a href="#cb11-16"></a>categories<span class="sc">:</span> [code, analysis, visualization, plotly]</span>
-<span id="cb11-17"><a href="#cb11-17"></a>image<span class="sc">:</span> <span class="st">"plotly.png"</span></span>
-<span id="cb11-18"><a href="#cb11-18"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-3"><a href="#cb11-3"></a>date<span class="sc">:</span> <span class="dv">01-2-2023</span> </span>
+<span id="cb11-4"><a href="#cb11-4"></a>author<span class="sc">:</span> Deepsha Menghani </span>
+<span id="cb11-5"><a href="#cb11-5"></a>categories<span class="sc">:</span> [code, analysis, visualization, plotly]</span>
+<span id="cb11-6"><a href="#cb11-6"></a>image<span class="sc">:</span> <span class="st">"plotly.png"</span></span>
+<span id="cb11-7"><a href="#cb11-7"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="new-projects-page" class="slide level2">
@@ -800,14 +837,14 @@ Deepsha Menghani
 
 <img data-src="images/content_added.png" class="r-stretch quarto-figure-center"></section></section>
 <section>
-<section id="or-completely-customize-the-projects-page-with-external-blog-links" class="title-slide slide level1 center" data-background-color="#2c3e50">
+<section id="or-completely-customize-the-projects-page-with-external-blog-links" class="title-slide slide level1 center" data-background-color="#004E4F">
 <h1>Or completely customize the projects page with external blog links</h1>
 
 </section>
 <section id="custom-projects.qmd-content-list" class="slide level2">
 <h2>Custom projects.qmd content list</h2>
 <div class="columns">
-<div class="column fragment" style="width:55%;">
+<div class="column" style="width:55%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="do">## Quarto blog - Data visualizations - Animation and Interactivity</span></span>
 <span id="cb12-2"><a href="#cb12-2"></a></span>
@@ -842,7 +879,7 @@ Deepsha Menghani
 <span id="cb12-31"><a href="#cb12-31"></a></span>
 <span id="cb12-32"><a href="#cb12-32"></a><span class="er">::::</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div><div class="column fragment" style="width:45%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/custom_projects_page.png"></p>
 </div>
 </div>
@@ -855,7 +892,7 @@ Deepsha Menghani
 <section id="top-right-navigation-bar-links" class="slide level2">
 <h2>Top right navigation bar links</h2>
 <div class="columns">
-<div class="column fragment" style="width:55%;">
+<div class="column" style="width:55%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13" data-code-line-numbers="13-21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>website<span class="sc">:</span></span>
 <span id="cb13-2"><a href="#cb13-2"></a>  title<span class="sc">:</span> <span class="st">"Deepsha Menghani"</span></span>
@@ -880,27 +917,49 @@ Deepsha Menghani
 <span id="cb13-21"><a href="#cb13-21"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>deepshamenghani<span class="sc">/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
-</div><div class="column fragment" style="width:45%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/navbar_right.png"></p>
 </div>
 </div>
 </section>
 <section id="top-right-navigation-bar-links-output" class="slide level2 output-location-slide"><h2>Top right navigation bar links</h2><div class="cell output-location-slide">
 
+</div></section><section id="add-a-search-icon-for-the-website" class="slide level2">
+<h2>Add a search icon for the website</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="3-5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>website<span class="sc">:</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a>  title<span class="sc">:</span> <span class="st">"Deepsha Menghani"</span></span>
+<span id="cb14-3"><a href="#cb14-3"></a>  search<span class="sc">:</span> </span>
+<span id="cb14-4"><a href="#cb14-4"></a>    location<span class="sc">:</span> navbar</span>
+<span id="cb14-5"><a href="#cb14-5"></a>    type<span class="sc">:</span> overlay</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+</div><div class="column" style="width:45%;">
+<p><img data-src="images/navbar_search.png"></p>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://quarto.org/docs/websites/website-search.html">More options for adding search</a></p>
+</div>
+</section>
+<section id="add-a-search-icon-for-the-website-output" class="slide level2 output-location-slide"><h2>Add a search icon for the website</h2><div class="cell output-location-slide">
+
 </div></section><section id="toggle-between-dark-and-light-theme" class="slide level2">
 <h2>Toggle between dark and light theme</h2>
 <div class="columns">
-<div class="column fragment" style="width:55%;">
+<div class="column" style="width:55%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="3-5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>format<span class="sc">:</span></span>
-<span id="cb14-2"><a href="#cb14-2"></a>  html<span class="sc">:</span></span>
-<span id="cb14-3"><a href="#cb14-3"></a>    theme<span class="sc">:</span></span>
-<span id="cb14-4"><a href="#cb14-4"></a>      light<span class="sc">:</span> cosmo</span>
-<span id="cb14-5"><a href="#cb14-5"></a>      dark<span class="sc">:</span> darkly</span>
-<span id="cb14-6"><a href="#cb14-6"></a>    css<span class="sc">:</span> styles.css</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="3-5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>format<span class="sc">:</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a>  html<span class="sc">:</span></span>
+<span id="cb15-3"><a href="#cb15-3"></a>    theme<span class="sc">:</span></span>
+<span id="cb15-4"><a href="#cb15-4"></a>      light<span class="sc">:</span> cosmo</span>
+<span id="cb15-5"><a href="#cb15-5"></a>      dark<span class="sc">:</span> darkly</span>
+<span id="cb15-6"><a href="#cb15-6"></a>    css<span class="sc">:</span> styles.css</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
-</div><div class="column fragment" style="width:45%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/toggle.gif"></p>
 </div>
 </div>
@@ -913,28 +972,36 @@ Deepsha Menghani
 <div class="column" style="width:50%;">
 <p>Quarto yaml</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>format<span class="sc">:</span></span>
-<span id="cb15-2"><a href="#cb15-2"></a>  html<span class="sc">:</span></span>
-<span id="cb15-3"><a href="#cb15-3"></a>    theme<span class="sc">:</span></span>
-<span id="cb15-4"><a href="#cb15-4"></a>      light<span class="sc">:</span> cosmo</span>
-<span id="cb15-5"><a href="#cb15-5"></a>      dark<span class="sc">:</span> [cosmo, theme_dark_custom.scss]</span>
-<span id="cb15-6"><a href="#cb15-6"></a>    css<span class="sc">:</span> styles.css</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16" data-code-line-numbers="5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>format<span class="sc">:</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a>  html<span class="sc">:</span></span>
+<span id="cb16-3"><a href="#cb16-3"></a>    theme<span class="sc">:</span></span>
+<span id="cb16-4"><a href="#cb16-4"></a>      light<span class="sc">:</span> cosmo</span>
+<span id="cb16-5"><a href="#cb16-5"></a>      dark<span class="sc">:</span> [cosmo, theme_dark_custom.scss]</span>
+<span id="cb16-6"><a href="#cb16-6"></a>    css<span class="sc">:</span> styles.css</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </div><div class="column" style="width:50%;">
 <p>Dark theme scss</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="sc">/</span><span class="er">*</span><span class="sc">--</span> scss<span class="sc">:</span>defaults <span class="sc">--</span><span class="er">*/</span></span>
-<span id="cb16-2"><a href="#cb16-2"></a><span class="er">//</span> Base document colors</span>
-<span id="cb16-3"><a href="#cb16-3"></a><span class="sc">$</span>body<span class="sc">-</span>bg<span class="sc">:</span> <span class="co">#181818;</span></span>
-<span id="cb16-4"><a href="#cb16-4"></a><span class="er">$</span>body<span class="sc">-</span>color<span class="sc">:</span> white;</span>
-<span id="cb16-5"><a href="#cb16-5"></a><span class="sc">$</span>link<span class="sc">-</span>color<span class="sc">:</span> <span class="co">#75AADB;</span></span>
-<span id="cb16-6"><a href="#cb16-6"></a></span>
-<span id="cb16-7"><a href="#cb16-7"></a><span class="er">//</span> Code blocks</span>
-<span id="cb16-8"><a href="#cb16-8"></a><span class="sc">$</span>code<span class="sc">-</span>block<span class="sc">-</span>bg<span class="sc">-</span>alpha<span class="sc">:</span> <span class="sc">-</span>.<span class="dv">8</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="sc">/</span><span class="er">*</span><span class="sc">--</span> scss<span class="sc">:</span>defaults <span class="sc">--</span><span class="er">*/</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a><span class="er">//</span> Base document colors</span>
+<span id="cb17-3"><a href="#cb17-3"></a><span class="sc">$</span>body<span class="sc">-</span>bg<span class="sc">:</span> <span class="co">#181818;</span></span>
+<span id="cb17-4"><a href="#cb17-4"></a><span class="er">$</span>body<span class="sc">-</span>color<span class="sc">:</span> white;</span>
+<span id="cb17-5"><a href="#cb17-5"></a><span class="sc">$</span>link<span class="sc">-</span>color<span class="sc">:</span> <span class="co">#75AADB;</span></span>
+<span id="cb17-6"><a href="#cb17-6"></a></span>
+<span id="cb17-7"><a href="#cb17-7"></a><span class="er">//</span> Code blocks</span>
+<span id="cb17-8"><a href="#cb17-8"></a><span class="sc">$</span>code<span class="sc">-</span>block<span class="sc">-</span>bg<span class="sc">-</span>alpha<span class="sc">:</span> <span class="sc">-</span>.<span class="dv">8</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
+<div class="footer">
+<p>More html theme options: <a href="https://quarto.org/docs/output-formats/html-themes.html">https://quarto.org/docs/output-formats/html-themes.html</a></p>
+</div>
+</section>
+<section id="customize-the-dark-theme-output" class="slide level2 output-location-slide"><h2>Customize the dark theme</h2><div class="cell output-location-slide">
+
+</div></section><section id="customize-the-dark-theme-1" class="slide level2">
+<h2>Customize the dark theme</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><img data-src="images/light.png"></p>
@@ -942,50 +1009,52 @@ Deepsha Menghani
 <p><img data-src="images/dark.png"></p>
 </div>
 </div>
+<div class="footer">
+<p>More html theme options: <a href="https://quarto.org/docs/output-formats/html-themes.html">https://quarto.org/docs/output-formats/html-themes.html</a></p>
+</div>
 </section>
-<section id="customize-the-dark-theme-output" class="slide level2 output-location-slide"><h2>Customize the dark theme</h2><div class="cell output-location-slide">
-
-</div></section><section id="code-customizing" class="slide level2">
-<h2>Code customizing</h2>
+<section id="code-blocks-customization" class="slide level2">
+<h2>Code blocks customization</h2>
 <p>Quarto yaml</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="6-13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>format<span class="sc">:</span></span>
-<span id="cb17-2"><a href="#cb17-2"></a>  html<span class="sc">:</span></span>
-<span id="cb17-3"><a href="#cb17-3"></a>    theme<span class="sc">:</span></span>
-<span id="cb17-4"><a href="#cb17-4"></a>      light<span class="sc">:</span> cosmo</span>
-<span id="cb17-5"><a href="#cb17-5"></a>      dark<span class="sc">:</span> [cosmo, theme_dark_custom.scss]</span>
-<span id="cb17-6"><a href="#cb17-6"></a>    css<span class="sc">:</span> styles.css</span>
-<span id="cb17-7"><a href="#cb17-7"></a>    citations<span class="sc">-</span>hover<span class="sc">:</span> true</span>
-<span id="cb17-8"><a href="#cb17-8"></a>    code<span class="sc">-</span>link<span class="sc">:</span> true</span>
-<span id="cb17-9"><a href="#cb17-9"></a>    code<span class="sc">-</span>fold<span class="sc">:</span> show</span>
-<span id="cb17-10"><a href="#cb17-10"></a>    code<span class="sc">-</span>tools<span class="sc">:</span> true</span>
-<span id="cb17-11"><a href="#cb17-11"></a>    code<span class="sc">-</span>block<span class="sc">-</span>bg<span class="sc">:</span> <span class="st">"#2c3e50"</span></span>
-<span id="cb17-12"><a href="#cb17-12"></a>    code<span class="sc">-</span>block<span class="sc">-</span>border<span class="sc">-</span>left<span class="sc">:</span> <span class="st">"#31BAE9"</span></span>
-<span id="cb17-13"><a href="#cb17-13"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> radical</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18" data-code-line-numbers="6-12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>format<span class="sc">:</span></span>
+<span id="cb18-2"><a href="#cb18-2"></a>  html<span class="sc">:</span></span>
+<span id="cb18-3"><a href="#cb18-3"></a>    theme<span class="sc">:</span></span>
+<span id="cb18-4"><a href="#cb18-4"></a>      light<span class="sc">:</span> cosmo</span>
+<span id="cb18-5"><a href="#cb18-5"></a>      dark<span class="sc">:</span> [cosmo, theme_dark_custom.scss]</span>
+<span id="cb18-6"><a href="#cb18-6"></a>    code<span class="sc">-</span>link<span class="sc">:</span> true</span>
+<span id="cb18-7"><a href="#cb18-7"></a>    code<span class="sc">-</span>fold<span class="sc">:</span> show</span>
+<span id="cb18-8"><a href="#cb18-8"></a>    code<span class="sc">-</span>tools<span class="sc">:</span> true</span>
+<span id="cb18-9"><a href="#cb18-9"></a>    code<span class="sc">-</span>block<span class="sc">-</span>bg<span class="sc">:</span> <span class="st">"#004E4F"</span></span>
+<span id="cb18-10"><a href="#cb18-10"></a>    code<span class="sc">-</span>block<span class="sc">-</span>border<span class="sc">-</span>left<span class="sc">:</span> <span class="st">"#31BAE9"</span></span>
+<span id="cb18-11"><a href="#cb18-11"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> radical</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
+<div class="footer">
+<p>More code tools options here: <a href="https://quarto.org/docs/output-formats/html-code.html">https://quarto.org/docs/output-formats/html-code.html</a></p>
+</div>
 </section>
-<section id="code-customizing-output" class="slide level2 output-location-slide"><h2>Code customizing</h2><div class="cell output-location-slide">
+<section id="code-blocks-customization-output" class="slide level2 output-location-slide"><h2>Code blocks customization</h2><div class="cell output-location-slide">
 
 </div></section><section id="website-footer" class="slide level2">
 <h2>Website footer</h2>
 <div class="columns">
-<div class="column fragment" style="width:55%;">
+<div class="column" style="width:55%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18" data-code-line-numbers="4-11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>website<span class="sc">:</span></span>
-<span id="cb18-2"><a href="#cb18-2"></a>  title<span class="sc">:</span> <span class="st">"Deepsha Menghani"</span></span>
-<span id="cb18-3"><a href="#cb18-3"></a>  </span>
-<span id="cb18-4"><a href="#cb18-4"></a>  page<span class="sc">-</span>footer<span class="sc">:</span></span>
-<span id="cb18-5"><a href="#cb18-5"></a>    center<span class="sc">:</span> <span class="er">|</span></span>
-<span id="cb18-6"><a href="#cb18-6"></a>      <span class="er">&lt;</span>span class<span class="ot">=</span><span class="st">"container"</span><span class="sc">&gt;</span><span class="er">&lt;</span>strong<span class="sc">&gt;</span>[Contact Deepsha Menghani](mailto<span class="sc">:</span>menghani.deepsha<span class="sc">@</span>gmail.com)<span class="sc">&lt;</span><span class="er">/</span>strong<span class="sc">&gt;</span><span class="er">&lt;/</span>span<span class="sc">&gt;</span></span>
-<span id="cb18-7"><a href="#cb18-7"></a>    left<span class="sc">:</span> <span class="er">|</span></span>
-<span id="cb18-8"><a href="#cb18-8"></a>      <span class="er">&lt;</span>span class<span class="ot">=</span><span class="st">"container"</span><span class="sc">&gt;</span><span class="er">&lt;</span>strong<span class="sc">&gt;</span>Made with [Quarto](https<span class="sc">:</span><span class="er">//</span>quarto.org<span class="sc">/</span>)<span class="sc">&lt;</span><span class="er">/</span>strong<span class="sc">&gt;</span><span class="er">&lt;/</span>span<span class="sc">&gt;</span></span>
-<span id="cb18-9"><a href="#cb18-9"></a>    right<span class="sc">:</span> <span class="er">|</span></span>
-<span id="cb18-10"><a href="#cb18-10"></a>      <span class="er">&lt;</span>span class<span class="ot">=</span><span class="st">"container"</span><span class="sc">&gt;</span><span class="er">&lt;</span>strong<span class="sc">&gt;</span>[Github Code Repo](https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>deepshamenghani)<span class="sc">&lt;</span><span class="er">/</span>strong<span class="sc">&gt;</span><span class="er">&lt;/</span>span<span class="sc">&gt;</span></span>
-<span id="cb18-11"><a href="#cb18-11"></a>    background<span class="sc">:</span> <span class="st">"#2780e3"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19" data-code-line-numbers="4-11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>website<span class="sc">:</span></span>
+<span id="cb19-2"><a href="#cb19-2"></a>  title<span class="sc">:</span> <span class="st">"Deepsha Menghani"</span></span>
+<span id="cb19-3"><a href="#cb19-3"></a>  </span>
+<span id="cb19-4"><a href="#cb19-4"></a>  page<span class="sc">-</span>footer<span class="sc">:</span></span>
+<span id="cb19-5"><a href="#cb19-5"></a>    center<span class="sc">:</span> <span class="er">|</span></span>
+<span id="cb19-6"><a href="#cb19-6"></a>      <span class="er">&lt;</span>span class<span class="ot">=</span><span class="st">"container"</span><span class="sc">&gt;</span><span class="er">&lt;</span>strong<span class="sc">&gt;</span>[Contact Deepsha Menghani](mailto<span class="sc">:</span>menghani.deepsha<span class="sc">@</span>gmail.com)<span class="sc">&lt;</span><span class="er">/</span>strong<span class="sc">&gt;</span><span class="er">&lt;/</span>span<span class="sc">&gt;</span></span>
+<span id="cb19-7"><a href="#cb19-7"></a>    left<span class="sc">:</span> <span class="er">|</span></span>
+<span id="cb19-8"><a href="#cb19-8"></a>      <span class="er">&lt;</span>span class<span class="ot">=</span><span class="st">"container"</span><span class="sc">&gt;</span><span class="er">&lt;</span>strong<span class="sc">&gt;</span>Made with [Quarto](https<span class="sc">:</span><span class="er">//</span>quarto.org<span class="sc">/</span>)<span class="sc">&lt;</span><span class="er">/</span>strong<span class="sc">&gt;</span><span class="er">&lt;/</span>span<span class="sc">&gt;</span></span>
+<span id="cb19-9"><a href="#cb19-9"></a>    right<span class="sc">:</span> <span class="er">|</span></span>
+<span id="cb19-10"><a href="#cb19-10"></a>      <span class="er">&lt;</span>span class<span class="ot">=</span><span class="st">"container"</span><span class="sc">&gt;</span><span class="er">&lt;</span>strong<span class="sc">&gt;</span>[Github Code Repo](https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>deepshamenghani)<span class="sc">&lt;</span><span class="er">/</span>strong<span class="sc">&gt;</span><span class="er">&lt;/</span>span<span class="sc">&gt;</span></span>
+<span id="cb19-11"><a href="#cb19-11"></a>    background<span class="sc">:</span> <span class="st">"#2780e3"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
-</div><div class="column fragment" style="width:45%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/page_footer.png"></p>
 </div>
 </div>
@@ -995,15 +1064,15 @@ Deepsha Menghani
 </div></section><section id="favicon" class="slide level2">
 <h2>Favicon</h2>
 <div class="rows">
-<div class="row fragment" height="55%">
+<div class="row" height="55%">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>website<span class="sc">:</span></span>
-<span id="cb19-2"><a href="#cb19-2"></a>  title<span class="sc">:</span> <span class="st">"Deepsha Menghani"</span></span>
-<span id="cb19-3"><a href="#cb19-3"></a>  favicon<span class="sc">:</span> <span class="st">"images/linkedinpic.jpg"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>website<span class="sc">:</span></span>
+<span id="cb20-2"><a href="#cb20-2"></a>  title<span class="sc">:</span> <span class="st">"Deepsha Menghani"</span></span>
+<span id="cb20-3"><a href="#cb20-3"></a>  favicon<span class="sc">:</span> <span class="st">"images/linkedinpic.jpg"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </div>
-<div class="row fragment" height="45%">
+<div class="row" height="45%">
 <p><img data-src="images/favicon.png"></p>
 </div>
 </div>
@@ -1020,23 +1089,25 @@ Deepsha Menghani
 <ul>
 <li>Quarto Pub Publishing service for Quarto documents, websites, and books. Use Quarto Pub when you want a free, easy to use service for publicly available content.</li>
 <li>GitHub Pages Publish content based on source code managed within a GitHub repository. Use GitHub Pages when the source code for your document or site is hosted on GitHub.</li>
-<li>RStudio Connect Publishing platform for secure sharing of data products within an organization. Use RStudio Connect when you want to publish content within an organization rather than on the public internet.</li>
+<li>Posit Connect Publishing platform for secure sharing of R and Python data products. Use Posit Connect when you want additional features like authentication, running notebooks on a schedule &amp; git-backed publishing..</li>
 <li>Netlify Professional web publishing platform. Use Netlify when you want support for custom domains, authentication, previewing branches, and other more advanced capabilities.</li>
 <li>Other Services Content rendered with Quarto uses standard formats (HTML, PDFs, MS Word, etc.) that can be published anywhere. Use this if one of the methods above don’t meet your requirements.</li>
 </ul>
 <div class="footer">
-<p><a href="https://quarto.org/docs/publishing/">https://quarto.org/docs/publishing/</a></p>
+<p><a href="https://quarto.org/docs/publishing/" class="uri">https://quarto.org/docs/publishing/</a></p>
 </div>
 </section></section>
 <section id="you-did-it" class="title-slide slide level1 center">
 <h1>You did it!!!</h1>
 
-<img data-src="images/WA_screenshot_smile.png" class="r-stretch"><div class="footer footer-default">
+<img data-src="images/WA_screenshot_smile.png" class="r-stretch"><p><em>Twitter</em>: <a href="https://twitter.com/bigdatadipper">https://twitter.com/bigdatadipper</a></p>
+<p><em>Fediverse</em>: <a href="https://fosstodon.org/@deepsha">https://fosstodon.org/<span class="citation" data-cites="deepsha">@deepsha</span></a></p>
+<p><em>LinkedIn</em>: <a href="https://www.linkedin.com/in/deepshamenghani/">https://www.linkedin.com/in/deepshamenghani/</a></p>
+<p><em>Portfolio</em>: <a href="https://deepshamenghani.quarto.pub/dmenghani/">https://deepshamenghani.quarto.pub/dmenghani/</a></p>
+<div class="footer footer-default">
 <p><a href="https://quartopub.com/sites/deepshamenghani/portfolio-with-quarto-workshop">deepshamenghani.quarto.pub/portfolio-with-quarto</a></p>
 </div>
 </section>
-
-
     </div>
   </div>
 

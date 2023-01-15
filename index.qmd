@@ -14,29 +14,29 @@ format:
     multiplex: true
     code-link: true
     title-slide-attributes:
-      data-background-color: "#2c3e50"
+      data-background-color: "#004E4F"
 editor: source
 ---
 
-# What is a Data Science Portfolio {background-color="#2c3e50"}
+# What is a Data Science Portfolio {background-color="#004E4F"}
 
-
-
-## 
-
-#### A data science portfolio is a collection of your best work and demonstrates your skills as a data scientist [^1]
-
-[^1]: Source: [How To Build an Awesome Data Science Portfolio](https://www.springboard.com/blog/data-science/data-science-portfolio/){target="_blank" width="120%"}
+## A data science portfolio is a collection of your best work and demonstrates your skills as a data scientist
 
 <br>
 
-![](Images/How_to_build_portfolio.png){width="1000"}
+![](Images/components_of_portfolio.png)
 
-## But at the thought of creating a Data Science portfolio
+## A data science portfolio is a collection of your best work and demonstrates your skills as a data scientist
+
+<br>
+
+![](Images/strengths_of_portfolio.png)
+
+## But at the thought of creating a Data Science portfolio website...
 
 ![](Images/WA_whathappenstoyou.gif){fig-align="center"}
 
-#  {background-color="#2c3e50"}
+# 
 
 [Let's take a look at an example](https://deepshamenghani.quarto.pub/dmenghani/){target="_blank"}
 
@@ -46,14 +46,31 @@ editor: source
 
 <br>
 
-::: incremental
 -   Base blog skeleton is simple and clean
--   It already has the parts I need
+-   It already has the base components for a portfolio website
 -   It is very quick and easy to create
--   I can go from "good enough" simple to complex galore
+-   It is language and tool agnostic
+
+::: {.footer}
+Learn about Quarto at [https://quarto.org/](https://quarto.org/)
 :::
 
-# Let's build a portfolio {background-color="#2c3e50"}
+## What we will cover
+
+<br>
+
+-   Configuring the structure of your website
+-   Adding content
+-   Customizing to your unique self
+-   Publishing and updating your website
+
+::: {.footer}
+Learn about Quarto at [https://quarto.org/](https://quarto.org/)
+:::
+
+
+
+# Let's build a portfolio {background-color="#004E4F"}
 
 ## Create a new Quarto blog project
 
@@ -65,7 +82,7 @@ editor: source
 ```{=html}
 <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
 ```
-::: {.wistia_embed .wistia_async_i2xdl5qbvy style="height:530px;position:relative;width:1050px"}
+::: {.wistia_embed .wistia_async_i2xdl5qbvy style="height:800px;position:relative;width:1500px"}
 ::: {.wistia_swatch style="height:110%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"}
 <img src="https://fast.wistia.com/embed/medias/i2xdl5qbvy/swatch" style="filter:blur(5px);height:150%;object-fit:contain;width:200%;" aria-hidden="true" onload="this.parentNode.style.opacity=1;"/>
 :::
@@ -74,21 +91,43 @@ editor: source
 ## Initial file structure
 
 ::: columns
-::: {.column .fragment width="45%"}
+::: {.column width="45%"}
 ![](images/Blog_index_snapshot.png)
 :::
 
-::: {.column .fragment width="45%"}
+::: {.column width="45%"}
 ![](images/Blog_files_snapshot.png)
 :::
 :::
 
-## _quarto.yml file provides the primary structure to the website
+## Initial file structure
 
-:::: columns
+![](images/base_page_p0.png){fig-align="center"}
 
-::: {.column .fragment width="45%"}
+## index.qmd
 
+![](images/base_page_p1.png){fig-align="center"}
+
+## _quarto.yml
+
+![](images/base_page_p2.png){fig-align="center"}
+
+## about.qmd
+
+![](images/base_page_p3.png){fig-align="center"}
+
+## css files
+
+![](images/base_page_p4.png){fig-align="center"}
+
+## posts folder
+
+![](images/base_page_p5.png){fig-align="center"}
+
+## \_quarto.yml file provides the primary structure to the website
+
+::: columns
+::: {.column width="45%"}
 ```{r eval=FALSE, echo=TRUE}
 
 project:
@@ -111,25 +150,21 @@ format:
 editor: visual
 
 ```
-
 :::
 
-::: {.column .fragment width="55%"}
-
+::: {.column  width="55%"}
 ![](images/initial_blog.png)
-
+:::
 :::
 
-::::
-
-
+::: {.footer}
+More about website navidation options: [https://quarto.org/docs/websites/website-navigation.html](https://quarto.org/docs/websites/website-navigation.html)
+:::
 
 ## index.qmd file defines the home page of the website structure
 
-:::: columns
-
-::: {.column .fragment width="45%"}
-
+::: columns
+::: {.column width="45%"}
 ```{r eval=FALSE, echo=TRUE}
 
 ---
@@ -146,24 +181,17 @@ title-block-banner: true
 ---
 
 ```
-
 :::
 
-::: {.column .fragment width="55%"}
-
+::: {.column width="55%"}
 ![](images/initial_blog.png)
-
+:::
 :::
 
-::::
+## about.qmd file defines the "About" page structure
 
-
-## about.qmd file defines the "About" page structure 
-
-:::: columns
-
-::: {.column .fragment width="45%"}
-
+::: columns
+::: {.column width="45%"}
 ```{r eval=FALSE, echo=TRUE}
 
 ---
@@ -187,23 +215,17 @@ About this blog
 
 
 ```
-
 :::
 
-::: {.column .fragment width="55%"}
-
+::: {.column width="55%"}
 ![](images/initial_about.png)
-
+:::
 :::
 
-::::
+## Update title and introduce tabs by editing \_quarto.yml
 
-## Update title and introduce tabs by editing _quarto.yml
-
-:::: columns
-
-::: {.column .fragment width="45%"}
-
+::: columns
+::: {.column width="45%"}
 ```{r eval=FALSE, echo=TRUE}
 #| output-location: slide
 #| code-line-numbers: 2|5-11 
@@ -227,24 +249,19 @@ website:
       - icon: twitter
         href: https://twitter.com
 ```
-
 :::
 
-::: {.column .fragment width="55%"}
-
+::: {.column width="55%"}
 ![](images/tabs.png)
-
 :::
-::::
+:::
 
-# Adding and referencing content in the blog {background-color="#2c3e50"}
+# Adding and referencing content in the blog {background-color="#004E4F"}
 
 ## Update home tab by editing "index.qmd"
 
-:::: columns
-
-::: {.column .fragment width="45%"}
-
+::: columns
+::: {.column width="45%"}
 ```{r eval=FALSE, echo=TRUE}
 
 ---
@@ -259,27 +276,21 @@ about:
 
 About this blog
 ```
-
 :::
 
-::: {.column .fragment width="55%"}
+::: {.column width="55%"}
 ![](images/jolla.png)
+:::
+:::
 
-::: 
-
-::::
-
-::: {.footer}
+::: footer
 [More 'About' page templates](https://quarto.org/docs/websites/website-about.html)
 :::
 
-
 ## Add self description to the "index.qmd"
 
-:::: columns
-
-::: {.column .fragment width="45%"}
-
+::: columns
+::: {.column width="45%"}
 ```{r eval=FALSE, echo=TRUE}
 #| output-location: slide
 #| code-line-numbers: 11-17
@@ -297,22 +308,17 @@ I am a Sr. Data Scientist at Microsoft. I have an extensive background working w
 
 I recently expanded my skill set to include topics like Quarto, tidymodels, working in cross-language R/Python environment using reticulate, and data visualizations using animation and interactivity. I love learning new things constantly and sharing my knowledge with others in a digestible manner.
 ```
-
 :::
 
-::: {.column .fragment width="55%"}
+::: {.column width="55%"}
 ![](images/description.png)
-
-::: 
-
-::::
+:::
+:::
 
 ## Add media links to "index.qmd"
 
-:::: columns
-
-::: {.column .fragment width="55%"}
-
+::: columns
+::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
 #| output-location: slide
 #| code-line-numbers: 8-23
@@ -342,28 +348,24 @@ about:
 ---
 
 ```
-
 :::
 
-::: {.column .fragment width="45%"}
+::: {.column width="45%"}
 ![](images/medialinks.png)
+:::
+:::
 
-::: 
+::: {.footer}
+More icons at: [https://icons.getbootstrap.com/](https://icons.getbootstrap.com/)
+:::
 
-::::
+# Resume tab update {background-color="#004E4F"}
 
+## Embedding exisiting resume pdf in resume.qmd
 
-
-# Resume tab update {background-color="#2c3e50"}
-
-## Embedding exisiting resume pdf in [resume.qmd]{.fragment}
-
-:::: columns
-
-::: {.column .fragment width="55%"}
-
-
-```{.r eval=FALSE, echo=TRUE}
+::: columns
+::: {.column width="55%"}
+``` {.r eval="FALSE," echo="TRUE"}
 <html>
   
 <body>
@@ -381,32 +383,27 @@ about:
 
 <br>
 
-```{.r eval=FALSE, echo=TRUE}
+``` {.r eval="FALSE," echo="TRUE"}
 <iframe 
   width="800" 
   height="800" 
   src="images/Menghani_Deepsha_Resume.pdf">
 </iframe>
-
 ```
-
 :::
 
-::: {.column .fragment width="45%"}
+::: {.column width="45%"}
 ![](images/resume_embed.png)
+:::
+:::
 
-::: 
-
-::::
-
-# {background-color="#2c3e50"}
+#  {background-color="#004E4F"}
 
 Or create a personalized resume with Quarto markdown
 
 ## 
 
-:::: columns
-
+::: columns
 ::: {.column width="50%"}
 ![](images/WA_resume_p1.png){width="80%"}
 :::
@@ -414,26 +411,23 @@ Or create a personalized resume with Quarto markdown
 ::: {.column width="50%"}
 ![](images/WA_resume_p2.png){width="80%"}
 :::
+:::
 
-::::
-
-::: {.footer}
+::: footer
 [Wednesday Addam's resume code github repo](https://github.com/deepshamenghani/Wednesday_Addams_resume_quarto/)
 :::
 
-# Project listings  {background-color="#2c3e50"}
+# Project listings {background-color="#004E4F"}
 
 We will now work with projects.qmd
 
 ## Add listings of content within the website
 
-  - Projects tab points to the projects.qmd file as called out in _quarto.yml earlier
-  - The default "posts" folder has content examples that prjects.qmd can point to
-  
-:::: columns
+-   We pointed the "Projects" tab to the projects.qmd file in \_quarto.yml earlier
+-   Let's ask projects.qmd file to pick its listings from the posts folder
 
-::: {.column .fragment width="55%"}
-
+::: columns
+::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
 
 ---
@@ -450,51 +444,36 @@ title-block-banner: true
 ---
 
 ```
-
 :::
 
-::: {.column .fragment width="45%"}
+::: {.column width="45%"}
 ![](images/initial_posts.png)
-::: 
+:::
+:::
 
-::::
-
-::: {.footer}
-
+::: footer
 [Content listing templates](https://quarto.org/docs/websites/website-listings.html)
 :::
 
 ## Let's add another project to the content list
 
-  - Go to the "posts" folder in root directory
-  - Create a folder for the new content
-  - Add an "index.qmd" and accompanying image to the newly created folder
-
+-   Go to the "posts" folder in root directory
+-   Create a folder for the new content
+-   Add an "index.qmd" and accompanying image to the newly created folder
 
 ![](Images/create_plotly_folder.png)
 
 ## Index.qmd yaml within the new folder
 
-  - Add code or blog content
-  - Add an accompanying image in the same folder
-  - Add tags for categories for easy reference
-  
+-   Add code or blog content
+-   Add an accompanying image in the same folder
+-   Add tags for categories for easy reference
+
 ```{r eval=FALSE, echo=TRUE}
 ---
 title: "TidyTuesday: Retail Sales data analysis with Plotly in R"
-date: today 
-author:
-  - name: Deepsha Menghani 
-    url: https://github.com/deepshamenghani
-format:
-  html:
-    theme: flatly
-    code-fold: false
-    code-tools: true
-    code-link: true
-    toc: false
-    number-sections: true
-link-citations: yes
+date: 01-2-2023 
+author: Deepsha Menghani 
 categories: [code, analysis, visualization, plotly]
 image: "plotly.png"
 ---
@@ -502,20 +481,18 @@ image: "plotly.png"
 
 ## New Projects page
 
-  - Run the "index.qmd" within the new posts folder
-  - Run the home "index.qmd"
-  - The description is picked from the first line of your blog
-  
-![](images/content_added.png){fig-width=80%}
+-   Run the "index.qmd" within the new posts folder
+-   Run the home "index.qmd"
+-   The description is picked from the first line of your blog
 
-# Or completely customize the projects page with external blog links {background-color="#2c3e50"}
+![](images/content_added.png){fig-width="80%"}
+
+# Or completely customize the projects page with external blog links {background-color="#004E4F"}
 
 ## Custom projects.qmd content list
 
-:::: columns
-
-::: {.column .fragment width="55%"}
-
+::: columns
+::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
 
 ## Quarto blog - Data visualizations - Animation and Interactivity
@@ -552,23 +529,19 @@ Description 2
 ::::
 
 ```
-
 :::
 
-::: {.column .fragment width="45%"}
+::: {.column width="45%"}
 ![](images/custom_projects_page.png)
-::: 
+:::
+:::
 
-::::
-
-# Further personalization with _quarto.yml
+# Further personalization with \_quarto.yml
 
 ## Top right navigation bar links
 
-:::: columns
-
-::: {.column .fragment width="55%"}
-
+::: columns
+::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
 #| output-location: slide
 #| code-line-numbers: 13-21
@@ -595,21 +568,42 @@ website:
         href: https://github.com/deepshamenghani/
 
 ```
-
 :::
 
-::: {.column .fragment width="45%"}
+::: {.column width="45%"}
 ![](images/navbar_right.png)
-::: 
+:::
+:::
 
-::::
+## Add a search icon for the website
+
+::: columns
+::: {.column width="55%"}
+```{r eval=FALSE, echo=TRUE}
+#| output-location: slide
+#| code-line-numbers: 3-5
+website:
+  title: "Deepsha Menghani"
+  search: 
+    location: navbar
+    type: overlay
+
+```
+:::
+
+::: {.column width="45%"}
+![](images/navbar_search.png)
+:::
+:::
+
+::: {.footer}
+[More options for adding search](https://quarto.org/docs/websites/website-search.html)
+:::
 
 ## Toggle between dark and light theme
 
-:::: columns
-
-::: {.column .fragment width="55%"}
-
+::: columns
+::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
 #| output-location: slide
 #| code-line-numbers: 3-5
@@ -621,21 +615,17 @@ format:
     css: styles.css
 
 ```
-
 :::
 
-::: {.column .fragment width="45%"}
+::: {.column width="45%"}
 ![](images/toggle.gif)
-::: 
-
-::::
-
+:::
+:::
 
 ## Customize the dark theme
 
-:::: columns
-
-::: {.column  width="50%"}
+::: columns
+::: {.column width="50%"}
 Quarto yaml
 
 ```{r eval=FALSE, echo=TRUE}
@@ -651,7 +641,7 @@ format:
 ```
 :::
 
-::: {.column  width="50%"}
+::: {.column width="50%"}
 Dark theme scss
 
 ```{r eval=FALSE, echo=TRUE}
@@ -665,55 +655,59 @@ $link-color: #75AADB;
 $code-block-bg-alpha: -.8;
 
 ```
-
-::: 
-
-::::
-
-:::: columns
-
-::: {.column  width="50%"}
-
-![](images/light.png)
-
+:::
 :::
 
-::: {.column  width="50%"}
+::: {.footer}
+More html theme options: [https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html)
+:::
+
+## Customize the dark theme
+
+::: columns
+::: {.column width="50%"}
+![](images/light.png)
+:::
+
+::: {.column width="50%"}
 ![](images/dark.png)
-::: 
+:::
+:::
 
-::::
+::: {.footer}
+More html theme options: [https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html)
+:::
 
-## Code customizing
+## Code blocks customization
 
 Quarto yaml
 
 ```{r eval=FALSE, echo=TRUE}
 #| output-location: slide
-#| code-line-numbers: 6-13
+#| code-line-numbers: 6-12
 
 format:
   html:
     theme:
       light: cosmo
       dark: [cosmo, theme_dark_custom.scss]
-    css: styles.css
-    citations-hover: true
     code-link: true
     code-fold: show
     code-tools: true
-    code-block-bg: "#2c3e50"
+    code-block-bg: "#004E4F"
     code-block-border-left: "#31BAE9"
     highlight-style: radical
 
 ```
 
+::: {.footer}
+More code tools options here: [https://quarto.org/docs/output-formats/html-code.html](https://quarto.org/docs/output-formats/html-code.html)
+:::
+
 ## Website footer
 
-:::: columns
-
-::: {.column .fragment width="55%"}
-
+::: columns
+::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
 #| output-location: slide
 #| code-line-numbers: 4-11
@@ -730,21 +724,17 @@ website:
     background: "#2780e3"
 
 ```
-
 :::
 
-::: {.column .fragment width="45%"}
+::: {.column width="45%"}
 ![](images/page_footer.png)
-::: 
-
-::::
+:::
+:::
 
 ## Favicon
 
-:::: rows
-
-::: {.row .fragment height="55%"}
-
+::: rows
+::: {.row height="55%"}
 ```{r eval=FALSE, echo=TRUE}
 #| output-location: slide
 #| code-line-numbers: 3
@@ -753,32 +743,35 @@ website:
   favicon: "images/linkedinpic.jpg"
 
 ```
-
 :::
 
-::: {.row .fragment height="45%"}
+::: {.row height="45%"}
 ![](images/favicon.png)
-::: 
-
-::::
-
-
+:::
+:::
 
 # Last step - Publish your website
 
-## Ways to publish 
+## Ways to publish
 
-  - Quarto Pub	Publishing service for Quarto documents, websites, and books. Use Quarto Pub when you want a free, easy to use service for publicly available content.
-  - GitHub Pages	Publish content based on source code managed within a GitHub repository. Use GitHub Pages when the source code for your document or site is hosted on GitHub. 
-  - RStudio Connect	Publishing platform for secure sharing of data products within an organization. Use RStudio Connect when you want to publish content within an organization rather than on the public internet.
-  - Netlify	Professional web publishing platform. Use Netlify when you want support for custom domains, authentication, previewing branches, and other more advanced capabilities. 
-  - Other Services	Content rendered with Quarto uses standard formats (HTML, PDFs, MS Word, etc.) that can be published anywhere. Use this if one of the methods above don’t meet your requirements.
-  
-::: {.footer}
-[https://quarto.org/docs/publishing/](https://quarto.org/docs/publishing/)
+-   Quarto Pub Publishing service for Quarto documents, websites, and books. Use Quarto Pub when you want a free, easy to use service for publicly available content.
+-   GitHub Pages Publish content based on source code managed within a GitHub repository. Use GitHub Pages when the source code for your document or site is hosted on GitHub.
+-   Posit Connect Publishing platform for secure sharing of R and Python data products. Use Posit Connect when you want additional features like authentication, running notebooks on a schedule & git-backed publishing..
+-   Netlify Professional web publishing platform. Use Netlify when you want support for custom domains, authentication, previewing branches, and other more advanced capabilities.
+-   Other Services Content rendered with Quarto uses standard formats (HTML, PDFs, MS Word, etc.) that can be published anywhere. Use this if one of the methods above don't meet your requirements.
+
+::: footer
+<https://quarto.org/docs/publishing/>
 :::
 
 # You did it!!!
 
 ![](images/WA_screenshot_smile.png)
 
+_Twitter_: [https://twitter.com/bigdatadipper](https://twitter.com/bigdatadipper) 
+
+_Fediverse_: [https://fosstodon.org/@deepsha](https://fosstodon.org/@deepsha)
+
+_LinkedIn_: [https://www.linkedin.com/in/deepshamenghani/](https://www.linkedin.com/in/deepshamenghani/)
+
+_Portfolio_: [https://deepshamenghani.quarto.pub/dmenghani/](https://deepshamenghani.quarto.pub/dmenghani/)
