@@ -52,7 +52,7 @@ editor: source
 -   It is language and tool agnostic
 
 ::: {.footer}
-Learn about Quarto at [https://quarto.org/](https://quarto.org/)
+Learn about Quarto at [https://quarto.org/](https://quarto.org/){target="_blank"}
 :::
 
 ## What we will cover
@@ -65,7 +65,7 @@ Learn about Quarto at [https://quarto.org/](https://quarto.org/)
 -   Publishing and updating your website
 
 ::: {.footer}
-Learn about Quarto at [https://quarto.org/](https://quarto.org/)
+Learn about Quarto at [https://quarto.org/](https://quarto.org/){target="_blank"}
 :::
 
 
@@ -158,7 +158,7 @@ editor: visual
 :::
 
 ::: {.footer}
-More about website navidation options: [https://quarto.org/docs/websites/website-navigation.html](https://quarto.org/docs/websites/website-navigation.html)
+More about website navidation options: [https://quarto.org/docs/websites/website-navigation.html](https://quarto.org/docs/websites/website-navigation.html){target="_blank"}
 :::
 
 ## index.qmd file defines the home page of the website structure
@@ -223,11 +223,10 @@ About this blog
 :::
 
 ## Update title and introduce tabs by editing \_quarto.yml
-
 ::: columns
 ::: {.column width="45%"}
 ```{r eval=FALSE, echo=TRUE}
-#| output-location: slide
+ 
 #| code-line-numbers: 2|5-11 
 
 website:
@@ -250,7 +249,6 @@ website:
         href: https://twitter.com
 ```
 :::
-
 ::: {.column width="55%"}
 ![](images/tabs.png)
 :::
@@ -284,7 +282,7 @@ About this blog
 :::
 
 ::: footer
-[More 'About' page templates](https://quarto.org/docs/websites/website-about.html)
+[More 'About' page templates](https://quarto.org/docs/websites/website-about.html){target="_blank"}
 :::
 
 ## Add self description to the "index.qmd"
@@ -292,7 +290,7 @@ About this blog
 ::: columns
 ::: {.column width="45%"}
 ```{r eval=FALSE, echo=TRUE}
-#| output-location: slide
+ 
 #| code-line-numbers: 11-17
 ---
 title: "Deepsha Menghani"
@@ -320,7 +318,7 @@ I recently expanded my skill set to include topics like Quarto, tidymodels, work
 ::: columns
 ::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
-#| output-location: slide
+ 
 #| code-line-numbers: 8-23
 ---
 title: "Deepsha Menghani"
@@ -356,7 +354,7 @@ about:
 :::
 
 ::: {.footer}
-More icons at: [https://icons.getbootstrap.com/](https://icons.getbootstrap.com/)
+More icons at: [https://icons.getbootstrap.com/](https://icons.getbootstrap.com/){target="_blank"}
 :::
 
 # Resume tab update {background-color="#004E4F"}
@@ -414,7 +412,7 @@ Or create a personalized resume with Quarto markdown
 :::
 
 ::: footer
-[Wednesday Addam's resume code github repo](https://github.com/deepshamenghani/Wednesday_Addams_resume_quarto/)
+[Wednesday Addam's resume code github repo](https://github.com/deepshamenghani/Wednesday_Addams_resume_quarto/){target="_blank"}
 :::
 
 # Project listings {background-color="#004E4F"}
@@ -452,7 +450,7 @@ title-block-banner: true
 :::
 
 ::: footer
-[Content listing templates](https://quarto.org/docs/websites/website-listings.html)
+[Content listing templates](https://quarto.org/docs/websites/website-listings.html){target="_blank"}
 :::
 
 ## Let's add another project to the content list
@@ -543,7 +541,7 @@ Description 2
 ::: columns
 ::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
-#| output-location: slide
+ 
 #| code-line-numbers: 13-21
 website:
   title: "Deepsha Menghani"
@@ -580,7 +578,7 @@ website:
 ::: columns
 ::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
-#| output-location: slide
+ 
 #| code-line-numbers: 3-5
 website:
   title: "Deepsha Menghani"
@@ -597,7 +595,7 @@ website:
 :::
 
 ::: {.footer}
-[More options for adding search](https://quarto.org/docs/websites/website-search.html)
+[More options for adding search](https://quarto.org/docs/websites/website-search.html){target="_blank"}
 :::
 
 ## Toggle between dark and light theme
@@ -605,7 +603,7 @@ website:
 ::: columns
 ::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
-#| output-location: slide
+ 
 #| code-line-numbers: 3-5
 format:
   html:
@@ -629,7 +627,7 @@ format:
 Quarto yaml
 
 ```{r eval=FALSE, echo=TRUE}
-#| output-location: slide
+ 
 #| code-line-numbers: 5
 format:
   html:
@@ -659,7 +657,7 @@ $code-block-bg-alpha: -.8;
 :::
 
 ::: {.footer}
-More html theme options: [https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html)
+More html theme options: [https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html){target="_blank"}
 :::
 
 ## Customize the dark theme
@@ -675,15 +673,14 @@ More html theme options: [https://quarto.org/docs/output-formats/html-themes.htm
 :::
 
 ::: {.footer}
-More html theme options: [https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html)
+More html theme options: [https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html){target="_blank"}
 :::
 
 ## Code blocks customization
 
-Quarto yaml
 
 ```{r eval=FALSE, echo=TRUE}
-#| output-location: slide
+ 
 #| code-line-numbers: 6-12
 
 format:
@@ -701,7 +698,7 @@ format:
 ```
 
 ::: {.footer}
-More code tools options here: [https://quarto.org/docs/output-formats/html-code.html](https://quarto.org/docs/output-formats/html-code.html)
+More code tools options here: [https://quarto.org/docs/output-formats/html-code.html](https://quarto.org/docs/output-formats/html-code.html){target="_blank"}
 :::
 
 ## Website footer
@@ -709,7 +706,7 @@ More code tools options here: [https://quarto.org/docs/output-formats/html-code.
 ::: columns
 ::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
-#| output-location: slide
+ 
 #| code-line-numbers: 4-11
 website:
   title: "Deepsha Menghani"
@@ -736,7 +733,7 @@ website:
 ::: rows
 ::: {.row height="55%"}
 ```{r eval=FALSE, echo=TRUE}
-#| output-location: slide
+ 
 #| code-line-numbers: 3
 website:
   title: "Deepsha Menghani"
@@ -761,7 +758,7 @@ website:
 -   Other Services Content rendered with Quarto uses standard formats (HTML, PDFs, MS Word, etc.) that can be published anywhere. Use this if one of the methods above don't meet your requirements.
 
 ::: footer
-<https://quarto.org/docs/publishing/>
+<https://quarto.org/docs/publishing/>{target="_blank"}
 :::
 
 # You did it!!!
