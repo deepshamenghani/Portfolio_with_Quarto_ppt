@@ -8,6 +8,7 @@ format:
     slide-number: c/t
     width: 1600
     height: 900
+    logo: "Images/posit-logo-fullcolor-TM.png"
     footer: "[deepshamenghani.quarto.pub/portfolio-with-quarto](https://quartopub.com/sites/deepshamenghani/portfolio-with-quarto-workshop)"
     theme: ["simple", "styles.scss"]
     echo: true
@@ -247,9 +248,9 @@ About this blog
 ![](images/base_page_p5.png){fig-align="center"}
 
 
-# Configure the structure with \_quarto.yml {background-color="#004E4F"}
+# Configure the structure with [\_quarto.yml]{.yellow} {background-color="#004E4F"}
 
-## Update title and introduce tabs by editing \_quarto.yml
+## Update title and introduce tabs by editing [\_quarto.yml]{.brown}
 ::: columns
 ::: {.column width="45%"}
 ```{r eval=FALSE, echo=TRUE}
@@ -279,9 +280,9 @@ website:
 :::
 :::
 
-# Add and reference content in the blog {background-color="#004E4F"}
+# Create your home page by updating ["index.qmd"]{.yellow} {background-color="#004E4F"}
 
-## Update home tab by editing "index.qmd"
+## Choose [About]{.brown} template for home page
 
 ::: columns
 ::: {.column width="45%"}
@@ -310,7 +311,7 @@ About this blog
 [More 'About' page templates](https://quarto.org/docs/websites/website-about.html){target="_blank"}
 :::
 
-## Add self description to the "index.qmd"
+## Add description
 
 ::: columns
 ::: {.column width="45%"}
@@ -337,7 +338,7 @@ I recently expanded my skill set to include topics like Quarto, tidymodels, work
 :::
 :::
 
-## Add media links to "index.qmd"
+## Add media links
 
 ::: columns
 ::: {.column width="55%"}
@@ -384,11 +385,11 @@ More icons at: [https://icons.getbootstrap.com/](https://icons.getbootstrap.com/
 
 ![](Images/carlton_dance.gif){fig-align="center"}
 
-# Resume tab update {background-color="#004E4F"}
+# Resume tab update with ["resume.qmd"]{.yellow} {background-color="#004E4F"}
 
 BYOR (Bring Your Own Resume) or create a personalized resume with Quarto markdown
 
-## Embedding exisiting resume pdf in resume.qmd 
+## Embed exisiting resume pdf
 
 ::: columns
 ::: {.column width="55%"}
@@ -409,6 +410,7 @@ BYOR (Bring Your Own Resume) or create a personalized resume with Quarto markdow
 :::
 :::
 
+# Or create the resume as a Quarto markdown
 
 ## 
 
@@ -426,9 +428,7 @@ BYOR (Bring Your Own Resume) or create a personalized resume with Quarto markdow
 [Wednesday Addam's resume code github repo](https://github.com/deepshamenghani/Wednesday_Addams_resume_quarto/){target="_blank"}
 :::
 
-# Project listings {background-color="#004E4F"}
-
-We will now work with projects.qmd
+# Add Project listings with ["projects.qmd"]{.yellow} {background-color="#004E4F"}
 
 ## Add listings of content within the website
 
@@ -499,7 +499,7 @@ In this post, I will analyse the TidyTuesday dataset about Retail Sales ...
 
 ![](images/content_added.png){fig-width="80%"}
 
-# Or completely customize the projects page with external blog links {background-color="#004E4F"}
+# Or completely customize the projects page with external blog links
 
 ## Custom projects.qmd content list
 
@@ -548,7 +548,7 @@ Description 2
 :::
 :::
 
-# Further personalization with \_quarto.yml
+# Further personalization with [\_quarto.yml]{.yellow} {background-color="#004E4F"}
 
 ## Top right navigation bar links
 
@@ -688,7 +688,7 @@ More html theme options: [https://quarto.org/docs/output-formats/html-themes.htm
 More html theme options: [https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html){target="_blank"}
 :::
 
-# Code blocks customization
+# Code blocks customizations
 
 ## Code-link: Enable hyper-linking of functions within code blocks to their online documentation
 
@@ -926,7 +926,8 @@ website:
 
 ##
 
-  -   Create a free public account on [https://quartopub.com/](https://quartopub.com/) using your default browser
+  -   Create a free public account on [https://quartopub.com/](https://quartopub.com/) 
+  -   Sign in using your default browser
   -   Go to the terminal and give the command
     -   quarto publish quarto-pub
   - Follow the instructions on screen
@@ -956,6 +957,7 @@ Quarto Pub sites are publicly visible, can be no larger than 100 MB and have a s
   -   [Beautiful reports and presentations with Quarto | Led by Tom Mock, Posit](https://www.youtube.com/watch?v=hbf7Ai3jnxY&t=678s)
   -   [Building a Blog with Quarto | Led by Isabella Velásquez, Posit](https://www.youtube.com/watch?v=CVcvXfRyfE0&t=380s)
   - [Create & Publish a Quarto Blog on Quarto Pub in 100 Seconds | Quarto Pub](https://www.youtube.com/watch?v=t8qtcDyCRFA)
+  - [My portfolio Github Repo](https://github.com/deepshamenghani/Portfolio_DeepshaM)
 
 ## You did it!!!
 
