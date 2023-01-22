@@ -44,12 +44,30 @@ editor: source
 
 ## Why I chose Quarto to build my portfolio
 
+:::: columns
+
+::: {.column width="60%"}
+![](Images/quarto.png)
+:::
+
+::: {.column  width="40%"}
+
 <br>
 
 -   Base blog skeleton is simple and clean
 -   It already has the base components for a portfolio website
 -   It is very quick and easy to create
 -   It is language and tool agnostic
+:::
+
+::::
+
+::: {.fragment}
+
+<br>
+
+___Very basic understanding of your favorite Quarto supported language and IDE.___
+:::
 
 ::: {.footer}
 Learn about Quarto at [https://quarto.org/](https://quarto.org/){target="_blank"}
@@ -100,29 +118,11 @@ Learn about Quarto at [https://quarto.org/](https://quarto.org/){target="_blank"
 :::
 :::
 
-## Initial file structure
+# Render a blog project... {background-color="#004E4F"}
 
-![](images/base_page_p0.png){fig-align="center"}
+![](images/lizzo-prayer.gif)
 
-## index.qmd
-
-![](images/base_page_p1.png){fig-align="center"}
-
-## _quarto.yml
-
-![](images/base_page_p2.png){fig-align="center"}
-
-## about.qmd
-
-![](images/base_page_p3.png){fig-align="center"}
-
-## css files
-
-![](images/base_page_p4.png){fig-align="center"}
-
-## posts folder
-
-![](images/base_page_p5.png){fig-align="center"}
+But first let's pray to the live code gods.
 
 ## \_quarto.yml file provides the primary structure to the website
 
@@ -222,13 +222,38 @@ About this blog
 :::
 :::
 
+## Initial file structure
+
+![](images/base_page_p0.png){fig-align="center"}
+
+## index.qmd
+
+![](images/base_page_p1.png){fig-align="center"}
+
+## _quarto.yml
+
+![](images/base_page_p2.png){fig-align="center"}
+
+## about.qmd
+
+![](images/base_page_p3.png){fig-align="center"}
+
+## css files
+
+![](images/base_page_p4.png){fig-align="center"}
+
+## posts folder
+
+![](images/base_page_p5.png){fig-align="center"}
+
+
+# Configure the structure with \_quarto.yml {background-color="#004E4F"}
+
 ## Update title and introduce tabs by editing \_quarto.yml
 ::: columns
 ::: {.column width="45%"}
 ```{r eval=FALSE, echo=TRUE}
  
-#| code-line-numbers: 2|5-11 
-
 website:
   title: "Deepsha Menghani"
   navbar:
@@ -254,7 +279,7 @@ website:
 :::
 :::
 
-# Adding and referencing content in the blog {background-color="#004E4F"}
+# Add and reference content in the blog {background-color="#004E4F"}
 
 ## Update home tab by editing "index.qmd"
 
@@ -291,7 +316,6 @@ About this blog
 ::: {.column width="45%"}
 ```{r eval=FALSE, echo=TRUE}
  
-#| code-line-numbers: 11-17
 ---
 title: "Deepsha Menghani"
 image: images/linkedinpic.jpg
@@ -319,7 +343,6 @@ I recently expanded my skill set to include topics like Quarto, tidymodels, work
 ::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
  
-#| code-line-numbers: 8-23
 ---
 title: "Deepsha Menghani"
 image: images/linkedinpic.jpg
@@ -357,27 +380,18 @@ about:
 More icons at: [https://icons.getbootstrap.com/](https://icons.getbootstrap.com/){target="_blank"}
 :::
 
+## And just that quickly, you have an elegant home page!!
+
+![](Images/carlton_dance.gif){fig-align="center"}
+
 # Resume tab update {background-color="#004E4F"}
 
-## Embedding exisiting resume pdf in resume.qmd
+BYOR (Bring Your Own Resume) or create a personalized resume with Quarto markdown
+
+## Embedding exisiting resume pdf in resume.qmd 
 
 ::: columns
 ::: {.column width="55%"}
-``` {.r eval="FALSE," echo="TRUE"}
-<html>
-  
-<body>
-    <center>
-        <object data=
-"images/Menghani_Deepsha_Resume.pdf" 
-                width="800" 
-                height="800"> 
-        </object>
-    </center>
-</body>
-  
-</html>
-```
 
 <br>
 
@@ -395,9 +409,6 @@ More icons at: [https://icons.getbootstrap.com/](https://icons.getbootstrap.com/
 :::
 :::
 
-#  {background-color="#004E4F"}
-
-Or create a personalized resume with Quarto markdown
 
 ## 
 
@@ -455,11 +466,12 @@ title-block-banner: true
 
 ## Let's add another project to the content list
 
+![](Images/create_plotly_folder.png)
+
 -   Go to the "posts" folder in root directory
 -   Create a folder for the new content
 -   Add an "index.qmd" and accompanying image to the newly created folder
 
-![](Images/create_plotly_folder.png)
 
 ## Index.qmd yaml within the new folder
 
@@ -475,6 +487,8 @@ author: Deepsha Menghani
 categories: [code, analysis, visualization, plotly]
 image: "plotly.png"
 ---
+  
+In this post, I will analyse the TidyTuesday dataset about Retail Sales ...
 ```
 
 ## New Projects page
@@ -542,7 +556,6 @@ Description 2
 ::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
  
-#| code-line-numbers: 13-21
 website:
   title: "Deepsha Menghani"
   navbar:
@@ -579,7 +592,6 @@ website:
 ::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
  
-#| code-line-numbers: 3-5
 website:
   title: "Deepsha Menghani"
   search: 
@@ -604,13 +616,11 @@ website:
 ::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
  
-#| code-line-numbers: 3-5
 format:
   html:
     theme:
       light: cosmo
       dark: darkly
-    css: styles.css
 
 ```
 :::
@@ -618,6 +628,10 @@ format:
 ::: {.column width="45%"}
 ![](images/toggle.gif)
 :::
+:::
+
+::: {.footer}
+[https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html)
 :::
 
 ## Customize the dark theme
@@ -628,13 +642,11 @@ Quarto yaml
 
 ```{r eval=FALSE, echo=TRUE}
  
-#| code-line-numbers: 5
 format:
   html:
     theme:
       light: cosmo
       dark: [cosmo, theme_dark_custom.scss]
-    css: styles.css
 
 ```
 :::
@@ -676,13 +688,71 @@ More html theme options: [https://quarto.org/docs/output-formats/html-themes.htm
 More html theme options: [https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html){target="_blank"}
 :::
 
-## Code blocks customization
+# Code blocks customization
 
+## Code-link: Enable hyper-linking of functions within code blocks to their online documentation
+
+::: columns
+::: {.column width="45%"}
+
+<br>
 
 ```{r eval=FALSE, echo=TRUE}
  
-#| code-line-numbers: 6-12
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: [cosmo, theme_dark_custom.scss]
+    code-link: true
 
+```
+:::
+
+::: {.column width="55%"}
+![](images/codelink.png)
+:::
+:::
+
+## Code-fold: Include code but have it hidden by default
+
+::: columns
+::: {.column width="45%"}
+
+<br>
+
+```{r eval=FALSE, echo=TRUE}
+ 
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: [cosmo, theme_dark_custom.scss]
+    code-link: true
+    code-fold: show
+
+```
+:::
+
+::: {.column width="55%"}
+::: {.r-stack}
+![](Images/codefoldclose.png){.fragment width="900" right=50}
+
+![](Images/codefoldopen.png){.fragment width="800" }
+
+:::
+:::
+:::
+
+## Code-tools: Code menu will present options to show and hide the folded code
+
+::: columns
+::: {.column width="45%"}
+
+<br>
+
+```{r eval=FALSE, echo=TRUE}
+ 
 format:
   html:
     theme:
@@ -691,15 +761,132 @@ format:
     code-link: true
     code-fold: show
     code-tools: true
-    code-block-bg: "#004E4F"
-    code-block-border-left: "#31BAE9"
-    highlight-style: radical
 
 ```
+:::
+
+::: {.column width="55%"}
+
+::: {.r-stack}
+![](Images/codetoolsclose.png){.fragment width="900" right=50}
+
+![](Images/codetoolsopen.png){.fragment width="800" }
+
+:::
+:::
+:::
+
+## Code-block-bg: Change code background color
+
+::: columns
+::: {.column width="45%"}
+
+<br>
+
+```{r eval=FALSE, echo=TRUE}
+ 
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: [cosmo, theme_dark_custom.scss]
+    code-link: true
+    code-fold: show
+    code-tools: true
+    code-block-bg: "lightblue"
+
+```
+:::
+
+::: {.column width="55%"}
+![](images/codebackground.png)
+:::
+:::
+
+## Code-block-border-left: Add a left border to the code blocks
+
+::: columns
+::: {.column width="45%"}
+
+<br>
+
+```{r eval=FALSE, echo=TRUE}
+ 
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: [cosmo, theme_dark_custom.scss]
+    code-link: true
+    code-fold: show
+    code-tools: true
+    code-block-bg: "lightblue"
+    code-block-border-left: "#31BAE9"
+
+```
+:::
+
+::: {.column width="55%"}
+![](images/codeborderleft.png)
+:::
+:::
+
+## Highlight-style: Choose from default code block templates
+
+::: columns
+::: {.column width="45%"}
+
+<br>
+
+```{r eval=FALSE, echo=TRUE}
+ 
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: [cosmo, theme_dark_custom.scss]
+    code-link: true
+    code-fold: show
+    code-tools: true
+    highlight-style: github
+
+```
+:::
+
+::: {.column width="55%"}
+
+::: {.r-stack}
+![](Images/githublight.png){.fragment width="900" right=50}
+
+![](Images/githubdark.png){.fragment width="800" }
+
+:::
+
+:::
+:::
 
 ::: {.footer}
 More code tools options here: [https://quarto.org/docs/output-formats/html-code.html](https://quarto.org/docs/output-formats/html-code.html){target="_blank"}
 :::
+
+## Favicon
+
+::: columns
+::: {.column width="55%"}
+```{r eval=FALSE, echo=TRUE}
+ 
+website:
+  title: "Deepsha Menghani"
+  favicon: "images/linkedinpic.jpg"
+
+```
+:::
+
+::: {.column width="45%"}
+![](images/favicon.png)
+:::
+:::
+
 
 ## Website footer
 
@@ -707,17 +894,17 @@ More code tools options here: [https://quarto.org/docs/output-formats/html-code.
 ::: {.column width="55%"}
 ```{r eval=FALSE, echo=TRUE}
  
-#| code-line-numbers: 4-11
 website:
   title: "Deepsha Menghani"
-  
+  favicon: "images/linkedinpic.jpg"
+
   page-footer:
     center: |
-      <span class="container"><strong>[Contact Deepsha Menghani](mailto:menghani.deepsha@gmail.com)</strong></span>
+      [Contact Deepsha Menghani](mailto:menghani.deepsha@gmail.com)
     left: |
-      <span class="container"><strong>Made with [Quarto](https://quarto.org/)</strong></span>
+      Made with [Quarto](https://quarto.org/)
     right: |
-      <span class="container"><strong>[Github Code Repo](https://github.com/deepshamenghani)</strong></span>
+      [Github Code Repo](https://github.com/deepshamenghani)
     background: "#2780e3"
 
 ```
@@ -728,28 +915,31 @@ website:
 :::
 :::
 
-## Favicon
 
-::: rows
-::: {.row height="55%"}
-```{r eval=FALSE, echo=TRUE}
- 
-#| code-line-numbers: 3
-website:
-  title: "Deepsha Menghani"
-  favicon: "images/linkedinpic.jpg"
+# Last step - Publish your website {background-color="#004E4F"}
 
-```
+# Let's publish with Quarto Pub...
+
+::: {.footer}
+<https://quarto.org/docs/publishing/quarto-pub.html>{target="_blank"}
 :::
 
-::: {.row height="45%"}
-![](images/favicon.png)
-:::
+##
+
+  -   Create a free public account on [https://quartopub.com/](https://quartopub.com/) using your default browser
+  -   Go to the terminal and give the command
+    -   quarto publish quarto-pub
+  - Follow the instructions on screen
+
+::: {.callout-note .fragment}  
+Quarto Pub sites are publicly visible, can be no larger than 100 MB and have a soft limit of 10 GB of bandwidth per month. 
 :::
 
-# Last step - Publish your website
+::: {.footer}
+<https://quarto.org/docs/publishing/quarto-pub.html>{target="_blank"}
+:::
 
-## Ways to publish
+## More ways to publish your Quarto website
 
 -   Quarto Pub Publishing service for Quarto documents, websites, and books. Use Quarto Pub when you want a free, easy to use service for publicly available content.
 -   GitHub Pages Publish content based on source code managed within a GitHub repository. Use GitHub Pages when the source code for your document or site is hosted on GitHub.
@@ -761,9 +951,15 @@ website:
 <https://quarto.org/docs/publishing/>{target="_blank"}
 :::
 
-# You did it!!!
+## Useful links
 
-![](images/WA_screenshot_smile.png)
+  -   [Beautiful reports and presentations with Quarto | Led by Tom Mock, Posit](https://www.youtube.com/watch?v=hbf7Ai3jnxY&t=678s)
+  -   [Building a Blog with Quarto | Led by Isabella Velásquez, Posit](https://www.youtube.com/watch?v=CVcvXfRyfE0&t=380s)
+  - [Create & Publish a Quarto Blog on Quarto Pub in 100 Seconds | Quarto Pub](https://www.youtube.com/watch?v=t8qtcDyCRFA)
+
+## You did it!!!
+
+![](images/Celebration.gif)
 
 _Twitter_: [https://twitter.com/bigdatadipper](https://twitter.com/bigdatadipper) 
 
